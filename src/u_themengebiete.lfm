@@ -1,0 +1,894 @@
+object themengebiete: Tthemengebiete
+  Left = 508
+  Height = 600
+  Top = 142
+  Width = 1000
+  Caption = 'Computergrafiken - theoretische Grundlagen'
+  ClientHeight = 600
+  ClientWidth = 1000
+  Color = clWhite
+  OnCreate = FormCreate
+  LCLVersion = '1.8.2.0'
+  object themen: TPageControl
+    Left = 12
+    Height = 440
+    Top = 88
+    Width = 976
+    ActivePage = thema7
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabIndex = 6
+    TabOrder = 0
+    object thema1: TTabSheet
+      Caption = 'Pixelgrafiken'
+      ClientHeight = 409
+      ClientWidth = 968
+      object L_textpixelgrafiken: TLabel
+        Left = 8
+        Height = 400
+        Top = 32
+        Width = 950
+        AutoSize = False
+        Caption = 'Eine Pixelgrafik ist eine Menge rasterförmig angeordneter Pixel, durch die ein Bild mit '#13#10'computerlesbaren Daten beschrieben wird.'#13#10#13#10'Die Auflösung kann über zwei verschiedene Arten definiert werden:'#13#10#13#10'- Definition (1):'#13#10'  Die Auflösung einer Pixelgrafik gibt die Anzahl der Bildpunkte an.'#13#10'  (Gesamtzahl oder in X- und Y-Richtung) '#13#10'  Einheit: 1 Megapixel'#13#10'  Beispiele: Darstellung am Computer, Fernseher, digitale Fotorahmen'#13#10#13#10'- Definition (2):'#13#10'  Die Auflösung einer Pixelgrafik gibt die Punktdichte je Längeneinheit '#13#10'  eines Printdokuments wieder.'#13#10'  Einheit: 1 dot per inch (dpi) wobei ein Inch definiert ist als: 1 inch = 1 engl. Zoll = 2,54cm'#13#10'  Beispiele: Scanner, Drucker, Sofortbildkamera'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object B_mario: TImage
+        Left = 696
+        Height = 248
+        Top = 64
+        Width = 254
+      end
+      object L_defpixel: TLabel
+        Left = 8
+        Height = 32
+        Top = 8
+        Width = 950
+        AutoSize = False
+        Caption = 'Definition von Pixelgrafiken'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object thema2: TTabSheet
+      Caption = 'Auflösung und Seitenverhältnis'
+      ClientHeight = 409
+      ClientWidth = 968
+      object L_textauflundseitv: TLabel
+        Left = 8
+        Height = 424
+        Top = 32
+        Width = 950
+        AutoSize = False
+        Caption = 'Beschäftigt man sich rechnerisch mit der Auflösung müssen wir zunächst die  Angabe des '#13#10'Seitenverhätnisses klären. Die Angabe der Auflösung erfolgt in dieser Form: 1280 x 800 Pixel'#13#10#13#10'Um aus dieser Angabe zum Seitenverhältnis zu gelangen schreibt man die Auflösung als '#13#10'Bruch 1280/800 und kürzt diesen solange bis es nicht mehr möglich ist.'#13#10'Darstellung: 1280/800 -> 640/400 -> 320/200 -> 160/100 -> 16/10 '#13#10#13#10#13#10'Wie ist die Auflösung bei einem Bild mit 2 Megapixel und einem Seitenverhältnis von 16:9?'#13#10#13#10'2 Megapixel = 2*10^6 Pixel. Nachfolgend stellt man jetzt folgendes Gleichungssystem auf:'#13#10'               '#13#10'              x*y=2000000'#13#10'              16/9=x/y'#13#10#13#10'Löst man dieses Gleichungssystem erhält man folgende Auflösung: 1885 x 1060 Pixel.'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_auflundseitv: TLabel
+        Left = 8
+        Height = 32
+        Top = 8
+        Width = 950
+        AutoSize = False
+        Caption = 'Auflösung und Seitenverhältnis'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_beispielaufgabe: TLabel
+        Left = 8
+        Height = 32
+        Top = 192
+        Width = 950
+        AutoSize = False
+        Caption = 'Beispielaufgabe:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object thema3: TTabSheet
+      Caption = 'Farbmodelle'
+      ClientHeight = 409
+      ClientWidth = 968
+      object L_allgtext: TLabel
+        Left = 8
+        Height = 72
+        Top = 32
+        Width = 950
+        AutoSize = False
+        Caption = 'Farbmodelle definieren die Farbe eines Objekts auf Basis einer Menge von Grundfarben und '#13#10'der Berechnungsfunktion aus diesen. Wir unterscheiden dabei 2 Arten an Farbmodellen, '#13#10'welche nachfolgend erläutert sind.'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_addfarbmtext: TLabel
+        Left = 8
+        Height = 128
+        Top = 144
+        Width = 950
+        AutoSize = False
+        Caption = 'Das RGB-Modell basiert auf den drei Grundfarben Rot, Grün und Blau und ist ein additives'#13#10'Farbmodell, d.h. das Farbempfinden durch das menschliche Auge wird durch sukzessives '#13#10'Hinzufügen ("Addieren") eines jeweils anderen Farbreizes beschrieben. Der Farbwert ist '#13#10'hierbei als Vektor definiert und wird in folgender Form angegeben: [rot;grün;blau].'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_addfarbm: TLabel
+        Left = 8
+        Height = 32
+        Top = 120
+        Width = 950
+        AutoSize = False
+        Caption = 'Additive Farbmischung / RGB-Farbmodell'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_allgfarbmodell: TLabel
+        Left = 8
+        Height = 32
+        Top = 8
+        Width = 950
+        AutoSize = False
+        Caption = 'Allgemeines'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_substfarbm: TLabel
+        Left = 8
+        Height = 32
+        Top = 256
+        Width = 950
+        AutoSize = False
+        Caption = 'Substraktive Farbmischung / CMYK-Farbmodell'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_substfrabmtext: TLabel
+        Left = 8
+        Height = 128
+        Top = 280
+        Width = 950
+        AutoSize = False
+        Caption = 'Das CMYK-Farbmodell wird in der Drucktechnik verwendet (d.h. die Farben bestehen aus '#13#10'Pigmenten), bei dem Farben durch Subtraktion der drei Grundfarben Cyan, Magenta und '#13#10'Gelb (Yellow) dargestellt werden. Schwarz wird als Kontrastfarbe hinzugezogen, da durch '#13#10'Mischen der drei Grundfarben kein 100%iges Schwarz entsteht. Der Farbwert ist hierbei als '#13#10'Vektor definiert und wird in folgender Form angegeben: [cyan, magenta, yellow, black].'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object thema4: TTabSheet
+      Caption = 'Veranschaulichung'
+      ClientHeight = 409
+      ClientWidth = 968
+      object L_textveransch: TLabel
+        Left = 8
+        Height = 32
+        Top = 16
+        Width = 950
+        AutoSize = False
+        Caption = 'RGB-Modell:                                                 CMYK-Modell:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object B_rgb: TImage
+        Left = 8
+        Height = 350
+        Top = 48
+        Width = 355
+      end
+      object B_cmyk: TImage
+        Left = 485
+        Height = 350
+        Top = 48
+        Width = 366
+      end
+    end
+    object thema5: TTabSheet
+      Caption = 'Farbmischer'
+      ClientHeight = 409
+      ClientWidth = 968
+      object P_rgbfarbe: TPanel
+        Left = 24
+        Height = 136
+        Top = 264
+        Width = 404
+        Color = clMenu
+        ParentColor = False
+        TabOrder = 0
+        OnPaint = FormCreate
+      end
+      object P_komplementaer: TPanel
+        Left = 536
+        Height = 136
+        Top = 264
+        Width = 404
+        Color = clMenu
+        ParentColor = False
+        TabOrder = 1
+      end
+      object L_gruen: TLabel
+        Left = 24
+        Height = 23
+        Top = 123
+        Width = 47
+        Caption = 'Grün'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_blau: TLabel
+        Left = 24
+        Height = 23
+        Top = 155
+        Width = 42
+        Caption = 'Blau'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_farbmischer: TLabel
+        Left = 24
+        Height = 23
+        Top = 16
+        Width = 394
+        Caption = 'Farbmischer für das RGB-Farbmodell'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_ausgabe: TLabel
+        Left = 24
+        Height = 23
+        Top = 200
+        Width = 92
+        Caption = 'Ausgabe'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_farbe: TLabel
+        Left = 24
+        Height = 23
+        Top = 232
+        Width = 61
+        Caption = 'Farbe:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_komplementaer: TLabel
+        Left = 536
+        Height = 23
+        Top = 232
+        Width = 196
+        Caption = 'Komplementärfarbe:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_eingabe: TLabel
+        Left = 24
+        Height = 23
+        Top = 56
+        Width = 86
+        Caption = 'Eingabe'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object SB_rot: TScrollBar
+        Left = 104
+        Height = 23
+        Top = 91
+        Width = 732
+        Max = 255
+        PageSize = 0
+        TabOrder = 2
+        OnChange = SB_rotChange
+      end
+      object SB_gruen: TScrollBar
+        Left = 104
+        Height = 23
+        Top = 123
+        Width = 732
+        Max = 255
+        PageSize = 0
+        TabOrder = 3
+        OnChange = SB_gruenChange
+      end
+      object SB_blau: TScrollBar
+        Left = 104
+        Height = 23
+        Top = 155
+        Width = 732
+        Max = 255
+        PageSize = 0
+        TabOrder = 4
+        OnChange = SB_blauChange
+      end
+      object E_ausgaberot: TEdit
+        Left = 856
+        Height = 31
+        Top = 91
+        Width = 80
+        Align = alCustom
+        Alignment = taCenter
+        Enabled = False
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 5
+      end
+      object E_ausgabegruen: TEdit
+        Left = 856
+        Height = 31
+        Top = 123
+        Width = 80
+        Align = alCustom
+        Alignment = taCenter
+        Enabled = False
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 6
+      end
+      object E_ausgabeblau: TEdit
+        Left = 856
+        Height = 31
+        Top = 155
+        Width = 80
+        Align = alCustom
+        Alignment = taCenter
+        Enabled = False
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 7
+      end
+      object L_rot: TLabel
+        Left = 24
+        Height = 23
+        Top = 91
+        Width = 32
+        Caption = 'Rot'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object thema6: TTabSheet
+      Caption = 'Farbraum und Farbtiefe'
+      ClientHeight = 409
+      ClientWidth = 968
+      object L_farbtiefe: TLabel
+        Left = 8
+        Height = 32
+        Top = 8
+        Width = 950
+        AutoSize = False
+        Caption = 'Farbtiefe'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_textfarbtiefe: TLabel
+        Left = 8
+        Height = 424
+        Top = 32
+        Width = 950
+        AutoSize = False
+        Caption = 'Die Farbtiefe ist ein Maß für die Anzahl der möglichen Farbwerte eines Pixels. Das heißt mit '#13#10'der Farbtiefe geben wir die zur Verfügung stehenden Bits zur Speicherung der Farbinformationen'#13#10'an. Mit der Farbtiefe kann man desweiteren auch den Speicherbedarf ausrechnen. Die'#13#10'möglichen Farbtöne berechnet man dann wie folgt: Anzahl der Farbtöne = 2^Farbtiefe'#13#10'Schauen wir uns zunächst eine schlichte Graustufen-Grafik an. Hier benötigen wir 2 Bit zur'#13#10'Speicherung, da vier Farbtöne auftreteten. (2^2=4 Farbtöne) Ein Bild mit insgesamt 9000 Pixeln'#13#10'benötigt einen Speicherbedarf von:'#13#10#13#10'9000 Pixel x 2  Bit = 18000 Bit  / 1024 = 17,57 kb'#13#10'               '#13#10'           '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_farbtiefe1: TLabel
+        Left = 8
+        Height = 32
+        Top = 256
+        Width = 950
+        AutoSize = False
+        Caption = 'Farbraum'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_textfarbtiefe1: TLabel
+        Left = 8
+        Height = 424
+        Top = 280
+        Width = 950
+        AutoSize = False
+        Caption = 'Der Farbraum ist ein Körper, in dem die '#13#10'Darstellung eines Objekts mittels Farbwerten '#13#10'standardisiert  geregelt ist. Die  Menge aller '#13#10'Farbwerte bildet einem Farbraum.'#13#10'               '#13#10'           '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object B_farbraum: TImage
+        Left = 464
+        Height = 146
+        Top = 256
+        Width = 480
+      end
+    end
+    object thema7: TTabSheet
+      Caption = 'Bildbearbeitung'
+      ClientHeight = 409
+      ClientWidth = 968
+      object L_bildbearbeitung: TLabel
+        Left = 8
+        Height = 32
+        Top = 8
+        Width = 950
+        AutoSize = False
+        Caption = 'Bildbearbeitung'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_textbearbeitung: TLabel
+        Left = 8
+        Height = 424
+        Top = 32
+        Width = 950
+        AutoSize = False
+        Caption = 'Bei der Bildbearbeitung stellen verschiedene Softwaresysteme dem Anwender eine große Anzahl '#13#10'an Möglichkeiten zur Verfügung, nachfolgend aufgelistet wird eine Auswahl von Grundfunktionen '#13#10'der Bildbearbeitung:'#13#10#13#10'     - Transformation (Zuschneiden, Spiegeln, Skalieren, Drehen, … )'#9#13#10'     - Filter (Weichzeichnern, Rauschen, Belichten, Schattieren, Graustufen, …)'#9#13#10'     - Farbfunktionen (Farbton, Sättigung, Helligkeit, Kontrast)'#13#10#13#10'Eine weitere elementare Funktion stellt die sogenannte Layertechnik dar. Bei der Bildbearbeitung '#13#10'gibt es häufig das Problem, dass sich Bilder und Bildausschnitte überlagern und eine '#13#10'nachträgliche  Bearbeitung einzelner Komponenten nicht mehr möglich ist, wenn diese zu einem '#13#10'Bild ‚verschmolzen‘ sind. Die Layertechnik setzt hierbei auf Ebenen (Layern), welche dafür sorgen, '#13#10'dass sich überlagernde Bilddatein in Schichten übereinandergelegt werden und naträglich einzeln '#13#10'bearbeitet werden können.'#13#10#13#10'               '#13#10'           '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object thema8: TTabSheet
+      Caption = 'Werkzeuge'
+      ClientHeight = 409
+      ClientWidth = 968
+      object L_werkzeuge: TLabel
+        Left = 8
+        Height = 32
+        Top = 8
+        Width = 950
+        AutoSize = False
+        Caption = 'Werkzeuge / Software zur Bildbearbeitung'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_textwerkzeuge: TLabel
+        Left = 8
+        Height = 424
+        Top = 32
+        Width = 950
+        AutoSize = False
+        Caption = 'Zur Bildbearbeitung stehen dem Anwender eine Vielzahl an kostenfreien und kostenpflichten '#13#10'Programmen zur Verfügung, nachfolgend ein kleiner Überblick über Freeware-Programme:'#13#10#13#10'     - The Gimp (professionelle Bildbearbeitung, unterstützt Ebenen, plattformübergreifend)'#13#10#13#10'     - IrfanView (Bildbetrachtung und einfache Bearbeitung für Windows)'#13#10#13#10'     - Paint.Net (erweiterte Bildbearbeitung für Windows)'#13#10#13#10'     - PhotoScape (Tools zur Bildbetrachtung, Bildbearbeitung, Screenshots, Animationen)'#13#10#13#10'               '#13#10'           '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object B_gimp: TImage
+        Left = 80
+        Height = 80
+        Top = 296
+        Width = 92
+      end
+      object L_textwerkzeugeuntertitelbilder: TLabel
+        Left = 80
+        Height = 48
+        Top = 384
+        Width = 950
+        AutoSize = False
+        Caption = 'The Gimp                        IrfranView                        Paint.Net                        Photoscape'#13#10#13#10#13#10'               '#13#10'           '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+      object B_irfranview: TImage
+        Left = 304
+        Height = 80
+        Top = 296
+        Width = 80
+      end
+      object B_paintnet: TImage
+        Left = 528
+        Height = 80
+        Top = 296
+        Width = 80
+      end
+      object B_photoscape: TImage
+        Left = 752
+        Height = 80
+        Top = 296
+        Width = 80
+      end
+    end
+    object thema9: TTabSheet
+      Caption = 'Dateiformate'
+      ClientHeight = 409
+      ClientWidth = 968
+      object B_dateiformate: TImage
+        Left = 8
+        Height = 374
+        Top = 32
+        Width = 945
+      end
+      object L_dateiformate: TLabel
+        Left = 8
+        Height = 32
+        Top = 8
+        Width = 950
+        AutoSize = False
+        Caption = 'Dateiformate im Überblick'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object thema10: TTabSheet
+      Caption = 'Bildkompression'
+      ClientHeight = 409
+      ClientWidth = 968
+      object L_kompression: TLabel
+        Left = 8
+        Height = 32
+        Top = 8
+        Width = 950
+        AutoSize = False
+        Caption = 'vereinfachter Ablauf der Datenkompression'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_textkompression: TLabel
+        Left = 8
+        Height = 424
+        Top = 32
+        Width = 950
+        AutoSize = False
+        Caption = '1. Umrechnen der Farbinformationen in das YCbCr-Modell: '#13#10'Y...Mittlerer Helligkeitswert aller Farben, Cb ... Abweichung für blau, Cr ... Abweichung für '#13#10'rot (Abweichung für grün lässt sich diesen Werten wieder berechnen) → damit Trennung der '#13#10'beiden Komponenten Luminanz (Helligkeit) und Chrominanz (Farbigkeit)'#13#10#13#10'2. Reduzieren der Auflösung für Cb- und Cr-Kanal'#13#10'Grund: Anatomie des menschlichen Auges - die Rezeptoren für Formen haben eine höhere '#13#10'Auflösung als die für Farben.'#13#10#13#10'3. Berechnung der Kompression: '#13#10'Berechnung eines Koeffizienten aus Helligkeitsschwankungen  und deren Frequenz in 8x8 '#13#10'Pixelrastern nach mathematischem Verfahren'#13#10#13#10'4. Kodierung:'#13#10'„Entropie-Kodierung“ aller Koeffizienten in Bitfolgen nach dem Prinzip, je kleiner der'#13#10'Koeffizient, desto kürzer seine Bitfolge '#13#10#13#10'               '#13#10'           '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object thema11: TTabSheet
+      Caption = 'Vektorgrafiken'
+      ClientHeight = 409
+      ClientWidth = 968
+      object L_vektor: TLabel
+        Left = 8
+        Height = 32
+        Top = 8
+        Width = 950
+        AutoSize = False
+        Caption = 'Vektorgrafiken'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object L_textkompression1: TLabel
+        Left = 8
+        Height = 424
+        Top = 32
+        Width = 950
+        AutoSize = False
+        Caption = 'Vektorgrafiken setzen sich nicht aus einzelnen voneinander unabhängigen Pixeln zusammen, '#13#10'sondern beschreiben eine Linie oder eine Fläche als Objekt. Die Form und Größe des Objekts'#13#10'werden durch mathematische Werte definiert. Dazu werden grafisch primitive Formen, wie '#13#10'Kreise, Ellipsen und Kurven verwendet. Die mathematische Beschreibung erfolgt nach dem '#13#10'französische Mathematiker Pierre Bézier benannten Bézierkurven.'#13#10#13#10'Ein wesentlicher Vorteil von Vektorgrafiken ist die unendliche Skalierbarkeit, welche durch die'#13#10'mathematische Beschreibung ermöglicht wird, damit sind Vektorgrafiken auflösungsunabhängig.'#13#10'Durch die alleinige  Speicherung von Koordinaten eines Vektors (mit zusätzlichen Angaben zu'#13#10'Farben etc.) können ebenso deutlich geringere Datenmengen als bei Pixelgrafiken erreicht werden.'#13#10'               '#13#10'Für Fotos sind Vektorgrafiken nicht geeignet. Aber auch die Darstellung am zum Besipiel dem '#13#10'Computer führt zu dem Problem, dass die Vektorgrafik in eine Pixelgrafik umgrechnet wird und diese'#13#10'Umrechnung bei jeder neuen Veränderung (Drehen, Spiegeln, ... ) wiederholt ausgeführt wird.      '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object thema12: TTabSheet
+      Caption = 'Vektorgrafik VS Pixelgrafik'
+      ClientHeight = 409
+      ClientWidth = 968
+      object L_vektor1: TLabel
+        Left = 8
+        Height = 32
+        Top = 8
+        Width = 950
+        AutoSize = False
+        Caption = 'Unterschied zwischen Pixel und Vektorgrafiken'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -19
+        Font.Name = 'Verdana'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object B_vektorpixel: TImage
+        Left = 248
+        Height = 294
+        Top = 72
+        Width = 475
+      end
+    end
+  end
+  object P_obenrot: TPanel
+    Left = -1
+    Height = 80
+    Top = -1
+    Width = 700
+    ClientHeight = 80
+    ClientWidth = 700
+    Color = clRed
+    ParentColor = False
+    TabOrder = 1
+    object T_thema: TLabel
+      Left = 16
+      Height = 42
+      Top = 18
+      Width = 484
+      Caption = 'theoretische Grundlagen'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -35
+      Font.Name = 'Verdana'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object P_obengrau: TPanel
+    Left = 690
+    Height = 80
+    Top = -1
+    Width = 310
+    Color = clGray
+    ParentColor = False
+    TabOrder = 2
+  end
+  object P_untengrau: TPanel
+    Left = 0
+    Height = 6
+    Top = 575
+    Width = 700
+    Color = clGray
+    ParentColor = False
+    TabOrder = 3
+  end
+  object P_untenrot: TPanel
+    Left = 692
+    Height = 6
+    Top = 575
+    Width = 308
+    Color = clRed
+    ParentColor = False
+    TabOrder = 4
+  end
+  object T_copyright: TLabel
+    Left = 750
+    Height = 13
+    Top = 582
+    Width = 191
+    Caption = '(c) Patrick Binkert, Dresden 2018'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object B_beenden: TButton
+    Left = 384
+    Height = 33
+    Top = 536
+    Width = 232
+    Caption = 'zurück zur Navigationsstruktur'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_beendenClick
+    ParentFont = False
+    TabOrder = 5
+  end
+  object B_naechste: TButton
+    Left = 752
+    Height = 33
+    Top = 536
+    Width = 232
+    Caption = '>> nächste Thema >>'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_naechsteClick
+    ParentFont = False
+    TabOrder = 6
+  end
+  object B_zurueck: TButton
+    Left = 16
+    Height = 33
+    Top = 536
+    Width = 232
+    Caption = '<< vorheriges Thema <<'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_zurueckClick
+    ParentFont = False
+    TabOrder = 7
+  end
+end

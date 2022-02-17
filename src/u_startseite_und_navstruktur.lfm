@@ -1,0 +1,721 @@
+object startseiteundnavstruktur: Tstartseiteundnavstruktur
+  Left = 473
+  Height = 600
+  Top = 215
+  Width = 1000
+  Caption = 'Computergrafiken - theoretische Grundlagen, Übungsaufgaben und Abschlusstest'
+  ClientHeight = 600
+  ClientWidth = 1000
+  Color = clWhite
+  OnCreate = FormCreate
+  LCLVersion = '1.8.2.0'
+  object P_ueb6: TPanel
+    Left = 396
+    Height = 52
+    Top = 340
+    Width = 190
+    ParentColor = False
+    TabOrder = 31
+    Visible = False
+  end
+  object P_ueb3: TPanel
+    Left = 396
+    Height = 52
+    Top = 284
+    Width = 190
+    ParentColor = False
+    TabOrder = 30
+    Visible = False
+  end
+  object P_ueb5: TPanel
+    Left = 203
+    Height = 52
+    Top = 340
+    Width = 190
+    ParentColor = False
+    TabOrder = 29
+    Visible = False
+  end
+  object P_ueb4: TPanel
+    Left = 11
+    Height = 52
+    Top = 340
+    Width = 190
+    ParentColor = False
+    TabOrder = 28
+    Visible = False
+  end
+  object P_thema5: TPanel
+    Left = 780
+    Height = 52
+    Top = 148
+    Width = 188
+    ParentColor = False
+    TabOrder = 36
+    Visible = False
+  end
+  object P_thema4: TPanel
+    Left = 588
+    Height = 52
+    Top = 148
+    Width = 188
+    ParentColor = False
+    TabOrder = 35
+    Visible = False
+  end
+  object P_thema3: TPanel
+    Left = 396
+    Height = 52
+    Top = 148
+    Width = 190
+    ParentColor = False
+    TabOrder = 34
+    Visible = False
+  end
+  object P_thema2: TPanel
+    Left = 203
+    Height = 52
+    Top = 148
+    Width = 190
+    ParentColor = False
+    TabOrder = 33
+    Visible = False
+  end
+  object P_thema1: TPanel
+    Left = 11
+    Height = 52
+    Top = 148
+    Width = 190
+    ParentColor = False
+    TabOrder = 32
+    Visible = False
+  end
+  object P_obenrot: TPanel
+    Left = -1
+    Height = 80
+    Top = -1
+    Width = 700
+    ClientHeight = 80
+    ClientWidth = 700
+    Color = clRed
+    ParentColor = False
+    TabOrder = 0
+    object T_thema: TLabel
+      Left = 16
+      Height = 42
+      Top = 18
+      Width = 353
+      Caption = 'Computergrafiken'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -35
+      Font.Name = 'Verdana'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object P_untengrau: TPanel
+    Left = -1
+    Height = 6
+    Top = 575
+    Width = 700
+    Color = clGray
+    ParentColor = False
+    TabOrder = 1
+  end
+  object P_obengrau: TPanel
+    Left = 698
+    Height = 80
+    Top = -1
+    Width = 302
+    Color = clGray
+    ParentColor = False
+    TabOrder = 2
+  end
+  object P_untenrot: TPanel
+    Left = 700
+    Height = 6
+    Top = 575
+    Width = 300
+    Color = clRed
+    ParentColor = False
+    TabOrder = 3
+  end
+  object T_copyright: TLabel
+    Left = 750
+    Height = 13
+    Top = 582
+    Width = 191
+    Caption = '(c) Patrick Binkert, Dresden 2018'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object T_begruessung: TLabel
+    Left = 40
+    Height = 100
+    Top = 224
+    Width = 571
+    Alignment = taCenter
+    Caption = 'Im nachfolgenden Programm wirst du alle Grundlagen'#13#10'bezüglich Computergrafiken erlernen, du kannst in '#13#10'Übungen dein Wissen  überprüfen und am Ende'#13#10'testest du dich selbst im Abschlusstest!'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+  end
+  object T_dateneintragen: TLabel
+    Left = 144
+    Height = 25
+    Top = 392
+    Width = 697
+    Caption = 'Bevor es losgeht, musst du noch folgende Daten eintragen:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object E_vorname: TEdit
+    Left = 184
+    Height = 26
+    Top = 464
+    Width = 190
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+  end
+  object E_nachname: TEdit
+    Left = 400
+    Height = 26
+    Top = 464
+    Width = 190
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+  end
+  object E_klassenstufe: TEdit
+    Left = 616
+    Height = 26
+    Top = 464
+    Width = 190
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 6
+  end
+  object B_starten: TButton
+    Left = 371
+    Height = 43
+    Top = 510
+    Width = 258
+    Caption = 'Starte die Software!'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = B_startenClick
+    ParentFont = False
+    TabOrder = 7
+  end
+  object B_mario: TImage
+    Left = 672
+    Height = 248
+    Top = 112
+    Width = 254
+  end
+  object T_ueberschrift: TLabel
+    Left = 56
+    Height = 58
+    Top = 120
+    Width = 543
+    Alignment = taCenter
+    Caption = 'Herzlichen Willkommen '#13#10'zur interaktiven Lehr-und Lernsoftware!'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -24
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object B_beenden: TButton
+    Left = 888
+    Height = 24
+    Top = 545
+    Width = 96
+    Caption = 'Beenden'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_beendenClick
+    ParentFont = False
+    TabOrder = 8
+  end
+  object T_alleDaten: TLabel
+    Left = 208
+    Height = 23
+    Top = 520
+    Width = 282
+    Caption = 'Bitte fülle alle Felder aus!'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object T_vorname: TLabel
+    Left = 184
+    Height = 23
+    Top = 432
+    Width = 93
+    Caption = 'Vorname:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object T_nachname: TLabel
+    Left = 400
+    Height = 23
+    Top = 432
+    Width = 108
+    Caption = 'Nachname:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object T_klassenstufe: TLabel
+    Left = 616
+    Height = 23
+    Top = 432
+    Width = 70
+    Caption = 'Klasse:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object B_lehrerlogin: TButton
+    Left = 797
+    Height = 28
+    Top = 26
+    Width = 129
+    Caption = 'Lehreranmeldung'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_lehrerloginClick
+    ParentFont = False
+    TabOrder = 9
+  end
+  object P_abschlusstest: TPanel
+    Left = 11
+    Height = 52
+    Top = 476
+    Width = 190
+    ParentColor = False
+    TabOrder = 10
+    Visible = False
+  end
+  object P_ueb2: TPanel
+    Left = 203
+    Height = 52
+    Top = 284
+    Width = 190
+    ParentColor = False
+    TabOrder = 11
+    Visible = False
+  end
+  object P_ueb1: TPanel
+    Left = 11
+    Height = 52
+    Top = 284
+    Width = 190
+    ParentColor = False
+    TabOrder = 12
+    Visible = False
+  end
+  object B_thema1: TButton
+    Left = 16
+    Height = 44
+    Top = 152
+    Width = 180
+    Caption = 'Pixelgrafiken / Auflösung'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_thema1Click
+    ParentFont = False
+    TabOrder = 13
+    Visible = False
+  end
+  object B_thema2: TButton
+    Left = 208
+    Height = 44
+    Top = 152
+    Width = 180
+    Caption = 'Farbmodelle'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_thema2Click
+    ParentFont = False
+    TabOrder = 14
+    Visible = False
+  end
+  object B_thema4: TButton
+    Left = 592
+    Height = 44
+    Top = 152
+    Width = 180
+    Caption = 'Dateiformate'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_thema4Click
+    ParentFont = False
+    TabOrder = 15
+    Visible = False
+  end
+  object B_thema3: TButton
+    Left = 400
+    Height = 44
+    Top = 152
+    Width = 180
+    Caption = 'Bildbearbeitung'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_thema3Click
+    ParentFont = False
+    TabOrder = 16
+    Visible = False
+  end
+  object B_thema5: TButton
+    Left = 784
+    Height = 44
+    Top = 152
+    Width = 180
+    Caption = 'Vektorgrafiken'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_thema5Click
+    ParentFont = False
+    TabOrder = 17
+    Visible = False
+  end
+  object B_ueb1: TButton
+    Left = 16
+    Height = 44
+    Top = 288
+    Width = 180
+    Caption = 'Seitenverhältnis 1'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_ueb1Click
+    ParentFont = False
+    TabOrder = 18
+    Visible = False
+  end
+  object B_ueb2: TButton
+    Left = 208
+    Height = 44
+    Top = 288
+    Width = 180
+    Caption = 'Auflösung 1'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_ueb2Click
+    ParentFont = False
+    TabOrder = 19
+    Visible = False
+  end
+  object B_ueb3: TButton
+    Left = 401
+    Height = 44
+    Top = 288
+    Width = 180
+    Caption = 'Speicherbedarf'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_ueb3Click
+    ParentFont = False
+    TabOrder = 20
+    Visible = False
+  end
+  object B_abschlusstest: TButton
+    Left = 16
+    Height = 44
+    Top = 480
+    Width = 180
+    Caption = 'Abschlusstest starten'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_abschlusstestClick
+    ParentFont = False
+    TabOrder = 21
+    Visible = False
+  end
+  object T_uebungen: TLabel
+    Left = 11
+    Height = 29
+    Top = 248
+    Width = 227
+    Caption = 'Übungsaufgaben'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -24
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object T_abschlusstest: TLabel
+    Left = 11
+    Height = 29
+    Top = 440
+    Width = 186
+    Caption = 'Abschlusstest'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -24
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object P_trennbalken1: TPanel
+    Left = 11
+    Height = 4
+    Top = 208
+    Width = 958
+    Color = clBackground
+    ParentColor = False
+    TabOrder = 22
+    Visible = False
+  end
+  object P_trennbalken2: TPanel
+    Left = 11
+    Height = 4
+    Top = 400
+    Width = 575
+    Color = clBackground
+    ParentColor = False
+    TabOrder = 23
+    Visible = False
+  end
+  object P_trennbalken3: TPanel
+    Left = 11
+    Height = 4
+    Top = 536
+    Width = 190
+    Color = clBackground
+    ParentColor = False
+    TabOrder = 24
+    Visible = False
+  end
+  object B_ueb4: TButton
+    Left = 16
+    Height = 44
+    Top = 344
+    Width = 180
+    Caption = 'Seitenverhältnis 2'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_ueb4Click
+    ParentFont = False
+    TabOrder = 25
+    Visible = False
+  end
+  object B_ueb5: TButton
+    Left = 208
+    Height = 44
+    Top = 344
+    Width = 180
+    Caption = 'Auflösung 2'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_ueb5Click
+    ParentFont = False
+    TabOrder = 26
+    Visible = False
+  end
+  object B_ueb6: TButton
+    Left = 401
+    Height = 44
+    Top = 344
+    Width = 180
+    Caption = 'Größenanpassung'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_ueb6Click
+    ParentFont = False
+    TabOrder = 27
+    Visible = False
+  end
+  object T_themengebiete: TLabel
+    Left = 11
+    Height = 29
+    Top = 112
+    Width = 332
+    Caption = 'theoretische Grundlagen'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -24
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object T_stat: TLabel
+    Left = 272
+    Height = 23
+    Top = 438
+    Width = 332
+    Caption = 'Statistik des letzten Versuchs:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object T_statpunkte: TLabel
+    Left = 272
+    Height = 23
+    Top = 464
+    Width = 89
+    Caption = 'Punkte: -'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object T_statnote: TLabel
+    Left = 272
+    Height = 23
+    Top = 493
+    Width = 69
+    Caption = 'Note: -'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object T_statzeit: TLabel
+    Left = 272
+    Height = 23
+    Top = 520
+    Width = 61
+    Caption = 'Zeit: -'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+end

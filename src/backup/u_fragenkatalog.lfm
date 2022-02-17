@@ -1,0 +1,593 @@
+object fragenkat: Tfragenkat
+  Left = 680
+  Height = 261
+  Top = 280
+  Width = 493
+  Caption = 'Fragenkatolog - Anlegen, Auslesen und Verändern'
+  ClientHeight = 261
+  ClientWidth = 493
+  Color = clWhite
+  OnCreate = FormCreate
+  LCLVersion = '1.8.2.0'
+  object B_anlegen: TButton
+    Left = 16
+    Height = 32
+    Top = 96
+    Width = 160
+    Caption = 'neue Datei erzeugen'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_anlegenClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object B_auslesen: TButton
+    Left = 704
+    Height = 32
+    Top = 728
+    Width = 163
+    Caption = 'zur Kontrolle auslesen'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_auslesenClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object B_close: TButton
+    Left = 1136
+    Height = 24
+    Top = 736
+    Width = 177
+    Caption = 'Abmelden und Beenden'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_closeClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 704
+    Height = 280
+    Top = 440
+    Width = 609
+    Lines.Strings = (
+      ''
+    )
+    ScrollBars = ssAutoVertical
+    TabOrder = 3
+  end
+  object StringGrid1: TStringGrid
+    Left = 16
+    Height = 256
+    Top = 144
+    Width = 1297
+    ColCount = 6
+    DefaultColWidth = 85
+    DefaultRowHeight = 25
+    FixedCols = 0
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    RowCount = 16
+    ScrollBars = ssAutoVertical
+    TabOrder = 4
+    TitleFont.CharSet = ANSI_CHARSET
+    TitleFont.Height = -13
+    TitleFont.Name = 'Verdana'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Quality = fqDraft
+    ColWidths = (
+      40
+      514
+      230
+      231
+      203
+      51
+    )
+    Cells = (
+      6
+      0
+      0
+      'Index'
+      1
+      0
+      'Frage'
+      2
+      0
+      'Antwort 1'
+      3
+      0
+      'Antwort 2'
+      4
+      0
+      'Antwort 3'
+      5
+      0
+      'Lösung'
+    )
+  end
+  object E_index: TEdit
+    Left = 16
+    Height = 24
+    Top = 456
+    Width = 80
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+  end
+  object B_schreibe: TButton
+    Left = 248
+    Height = 32
+    Top = 96
+    Width = 328
+    Caption = 'neuen Datensatz (aktuelle Tabelle) in Datei schreiben'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_schreibeClick
+    ParentFont = False
+    TabOrder = 6
+  end
+  object L_index: TLabel
+    Left = 16
+    Height = 18
+    Top = 434
+    Width = 124
+    Caption = 'Index [integer]'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object E_frage: TEdit
+    Left = 16
+    Height = 24
+    Top = 504
+    Width = 648
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 7
+  end
+  object L_frage: TLabel
+    Left = 16
+    Height = 18
+    Top = 482
+    Width = 112
+    Caption = 'Frage [string]'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object E_antwort1: TEdit
+    Left = 16
+    Height = 24
+    Top = 552
+    Width = 648
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 8
+  end
+  object L_antwort1: TLabel
+    Left = 16
+    Height = 18
+    Top = 530
+    Width = 147
+    Caption = 'Antwort 1 [string]'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object E_antwort2: TEdit
+    Left = 16
+    Height = 24
+    Top = 600
+    Width = 648
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+  end
+  object L_antwort2: TLabel
+    Left = 16
+    Height = 18
+    Top = 578
+    Width = 147
+    Caption = 'Antwort 2 [string]'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object E_antwort3: TEdit
+    Left = 16
+    Height = 24
+    Top = 648
+    Width = 648
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 10
+  end
+  object L_antwort3: TLabel
+    Left = 16
+    Height = 18
+    Top = 626
+    Width = 147
+    Caption = 'Antwort 3 [string]'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object E_loesung: TEdit
+    Left = 16
+    Height = 24
+    Top = 696
+    Width = 80
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 11
+  end
+  object L_loesung: TLabel
+    Left = 16
+    Height = 18
+    Top = 674
+    Width = 136
+    Caption = 'Lösung [integer]'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object B_vorhdateiauslesen: TButton
+    Left = 16
+    Height = 32
+    Top = 96
+    Width = 208
+    Caption = 'vorhandenen Datensatz auslesen'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_vorhdateiauslesenClick
+    ParentFont = False
+    TabOrder = 12
+    Visible = False
+  end
+  object B_aendere: TButton
+    Left = 16
+    Height = 32
+    Top = 728
+    Width = 164
+    Caption = 'Datensatz ändern'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_aendereClick
+    ParentFont = False
+    TabOrder = 13
+  end
+  object L_dateigroesse: TLabel
+    Left = 592
+    Height = 18
+    Top = 104
+    Width = 313
+    Caption = 'Dateigröße... erfolgreich beschrieben?'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object L_manipulation: TLabel
+    Left = 16
+    Height = 18
+    Top = 408
+    Width = 208
+    Caption = 'Datensatzmanipulation:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object L_ausgabegeschriebenedatei: TLabel
+    Left = 704
+    Height = 18
+    Top = 408
+    Width = 269
+    Caption = 'Ausgabe geschriebener Datei: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object L_dateiname: TLabel
+    Left = 976
+    Height = 18
+    Top = 408
+    Width = 201
+    Caption = '''fragen_wissenstest.db'':'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 146
+    Height = 32
+    Top = 452
+    Width = 200
+    Caption = 'Daten zu diesem Index auslesen'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 14
+  end
+  object P_obenrot: TPanel
+    Left = -1
+    Height = 80
+    Top = -1
+    Width = 935
+    ClientHeight = 80
+    ClientWidth = 935
+    Color = clRed
+    ParentColor = False
+    TabOrder = 15
+    object T_thema: TLabel
+      Left = 16
+      Height = 42
+      Top = 18
+      Width = 280
+      Caption = 'Fragenkatalog'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -35
+      Font.Name = 'Verdana'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object P_obengrau: TPanel
+    Left = 930
+    Height = 80
+    Top = -1
+    Width = 403
+    Color = clGray
+    ParentColor = False
+    TabOrder = 16
+  end
+  object P_untengrau: TPanel
+    Left = -1
+    Height = 6
+    Top = 768
+    Width = 942
+    Color = clGray
+    ParentColor = False
+    TabOrder = 17
+  end
+  object P_untenrot: TPanel
+    Left = 939
+    Height = 6
+    Top = 768
+    Width = 404
+    Color = clRed
+    ParentColor = False
+    TabOrder = 18
+  end
+  object T_copyright: TLabel
+    Left = 1040
+    Height = 13
+    Top = 775
+    Width = 191
+    Caption = '(c) Patrick Binkert, Dresden 2018'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object E_passwort: TEdit
+    Left = 16
+    Height = 24
+    Top = 204
+    Width = 250
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 19
+    Text = 'LEMPEL'
+  end
+  object E_benutzername: TEdit
+    Left = 16
+    Height = 24
+    Top = 136
+    Width = 250
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 20
+    Text = 'LEHRER'
+  end
+  object B_checklogin: TButton
+    Left = 304
+    Height = 29
+    Top = 133
+    Width = 161
+    Caption = 'Anmelden'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_checkloginClick
+    ParentFont = False
+    TabOrder = 21
+  end
+  object T_benutzername: TLabel
+    Left = 16
+    Height = 23
+    Top = 105
+    Width = 145
+    Caption = 'Benutzername:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object T_passwort: TLabel
+    Left = 16
+    Height = 23
+    Top = 176
+    Width = 94
+    Caption = 'Passwort:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object B_zurueck: TButton
+    Left = 328
+    Height = 22
+    Top = 205
+    Width = 104
+    Caption = 'zurück'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = B_zurueckClick
+    ParentFont = False
+    TabOrder = 22
+  end
+  object L_falsch: TLabel
+    Left = 81
+    Height = 18
+    Top = 240
+    Width = 326
+    Caption = 'Benutzername oder Passwort falsch!'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object L_leererindex: TLabel
+    Left = 360
+    Height = 18
+    Top = 458
+    Width = 334
+    Caption = 'Kein oder falscher Index eingetragen!'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+end

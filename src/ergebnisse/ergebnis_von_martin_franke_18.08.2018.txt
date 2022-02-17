@@ -1,0 +1,65 @@
+Martin Franke, Schüler/Schülerin der Klasse 8, absolvierte am: 18.08.2018 um 13:35:06, den Wissenstest!
+ 
+Frage 1: Wie viele Pixel hat ein Megapixel?
+ i) 1 * 10^7 Pixel ii) 1 * 10^5 Pixel iii) 1 * 10^6 Pixel
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 1
+
+Frage 2: Ein Fotoapparat hat eine Auflösung von 8 Megapixel. Wie ist die horizontale und vertikale Pixelzahl, bei einem Seitenverhältnis von 16 zu 9?
+ i) 3567 x 1987 Pixel	 ii) 3771 x 2121 Pixel iii) 2950 x 1450 Pixel
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 2
+
+Frage 3: Was ist ein Nachteil einer Vektorgrafik?
+ i) Umrechnung in Pixelgrafik bei Darstellung am Computer ii) unendliche Skalierbarkeit  iii) deutlich geringere Datenmengen
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 3
+
+Frage 4: Was ist eine richtige Definition von Auflösung?
+ i) Auflösung gibt die Punktdichte je Längeneinheit eines Printdokumentes wieder ii) Auflösung ist ein Maß für die Farbwerte eines Pixels	 iii) Auflösung beschreibt den Vorgang beim Öffnen eines Bildes am Computer
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 1
+
+Frage 5: Was ist ein Vorteil einer JPEG-Datei?
+ i) keine Kompression ii) sehr gute Kompression iii) verlustbehaftete Kompression
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 3
+
+Frage 6: Welche Auflösung hat ein FULL-HD-Fernseher?
+ i) 1600 x 1480 Pixel	 ii) 1920 x 1080 Pixel  iii) 1240 x 1020 Pixel
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 2
+
+Frage 7: Was sind Bestandteile einer Vektorgrafik?
+ i) Metadaten ii) Pixel iii) grafisch primitive Formen und Kurven
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 1
+
+Frage 8: Ein Bildschirm hat eine Auflösung von 800x600 Pixeln, welches Seitenverhältnis hat dieser?
+ i) 5 zu 4 ii) 5 zu 3 iii) 4 zu 3
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 3
+
+Frage 9: Die Layertechnik löst Probleme bei der Bilderstellung, auf welchem Ansatz ist sie aufgebaut?
+ i) dem Einführen von Ebenen ii) Blindkopie im Ordner %temp% speichern iii) jedes Bild wird in einem anderen Programm geöffnet
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 2
+
+Frage 10: Wo findet das RGB-Farbmodell Verwendung?
+ i) Drucker ii) Sofortbildkamera iii) Computerbildschirm
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 1
+
+Frage 11: Wie ist ein inch definiert?
+ i) 2,45 ii) 2,54 iii) 2,50
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 1
+
+Frage 12: In welchem Dateiformat speichert man Animationen?
+ i) .png ii) .bmp iii) .gif
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 2
+
+Frage 13: Das CMYK-Farbmodell ist eine …?
+ i) substraktive Farbmischung ii) additive Farbmischung iii) produktive Farbmischung
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 3
+
+Frage 14: Eine Digitalkamera (Auflösung 8 Megapixel, 4:3) speichert ein Bild unkomprimiert mit 24 Bit. Wie groß ist die Bilddatei in Megabyte?
+ i) 22,89 Megabyte ii) 21,21 Megabyte iii) 23,54 Megabyte
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 3
+
+Frage 15: Was ist eine Pixelgrafik?
+ i) eine Menge rasterförmig angeordneter Pixel ii) grafische primitive Formen iii) ein bewegtes Bild
+Es wurde die richtige Antwort abgegeben! Diese war: Antwort 1
+
+
+Insgesamt wurden dabei 15 Punkte erreicht, was der Note 1 entspricht.
+Dafür wurden 13 Minuten und 27 Sekunden benötigt.
